@@ -1,10 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", async () => {
     createSquares();
 
     let guessedWords = [[]];
     let availableSpace = 1;
-
-    let word = 'dairy'
+    let wordle = await axios.get('http://localhost:3001/api/words')
+    let word = wordle.data
+    console.log(wordle, word)
     let guessedWordCount = 0;
     const keys = document.querySelectorAll('.keyboard-row button')
 

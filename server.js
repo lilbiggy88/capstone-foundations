@@ -18,15 +18,10 @@ const options = {
   url: 'https://wordsapiv1.p.rapidapi.com/words/?random=true&letters=5',
   'responseType': 'arraybuffer', 
 'decompress': true,
-    // 'gzip': true,
   headers: {
     'X-RapidAPI-Key': '823388f6b1msh36c78196bd0f036p1bb87cjsn6a2099b9c477',
     'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com',
-    // 'Content-Type': 'application/json; charset=utf-8',
-    
-    // 'responseType': 'arraybuffer', 
-    // 'decompress': true
-    
+
   }
 };
 
